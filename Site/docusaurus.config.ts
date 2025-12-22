@@ -99,11 +99,11 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Modding',
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/intro',
+              to: '/modding/intro',
             },
           ],
         },
@@ -128,8 +128,8 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Builder',
+              to: '/builder',
             },
             {
               label: 'GitHub',
