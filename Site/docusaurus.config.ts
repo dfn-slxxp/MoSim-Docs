@@ -75,9 +75,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: 'MoSim Docs',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'MoSim Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -87,9 +87,9 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/builder', label: 'Builder', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/MoSimulator/MoSimulator-Public',
           label: 'GitHub',
           position: 'right',
         },
