@@ -21,7 +21,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/modding/intro">
-            Robot Walkthrough - 9496 Lynk
+            Modding Walkthrough - 9496 Lynk
           </Link>
         </div>
       </div>

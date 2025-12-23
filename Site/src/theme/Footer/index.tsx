@@ -16,7 +16,7 @@ export default function Footer(): JSX.Element {
           <SocialLinks />
           <FooterSponsors />
           <p className="footer__copyright">
-            © {currentYear} Cascade Studios. All rights reserved.
+            © {currentYear} Cascade Studios. All rights reserved. Created using Docusaurus.
           </p>
         </div>
       </div>
