@@ -6,8 +6,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'MoSim Docs',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  tagline: 'Bring your robot to life',
+  favicon: 'img/mosim-logo.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -40,27 +40,15 @@ const config: Config = {
       'classic',
       {
         docs: {
+          path: 'modding',
+          routeBasePath: 'modding',
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/MoSimulator/MoSim-Docs',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/MoSimulator/MoSim-Docs',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -68,9 +56,21 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'builder',
+        path: 'builder',
+        routeBasePath: 'builder',
+        sidebarPath: require.resolve('./sidebars.ts'),
+      },
+    ],
+  ],
+
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/mosim-logo.png',
     colorMode: {
       respectPrefersColorScheme: true,
     },
@@ -78,16 +78,22 @@ const config: Config = {
       title: 'MoSim Docs',
       logo: {
         alt: 'MoSim Logo',
-        src: 'img/logo.svg',
+        src: 'img/mosim-logo.png',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Modding',
         },
-        {to: '/builder', label: 'Builder', position: 'left'},
+        {
+          type: 'doc',
+          docId: 'intro',
+          docsPluginId: 'builder',
+          position: 'left',
+          label: 'Builder',
+        },
         {
           href: 'https://github.com/MoSimulator/MoSimulator-Public',
           label: 'GitHub',
@@ -128,8 +134,8 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Builder',
-              to: '/builder',
+              label: 'Devlogs',
+              to: 'https://mosimulator.com/devlog',
             },
             {
               label: 'GitHub',
