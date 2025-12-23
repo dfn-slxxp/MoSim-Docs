@@ -1,6 +1,8 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import FooterSponsors from "./src/components/FooterSponsors";
+import SocialLinks from "./src/components/SocialLinks";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
