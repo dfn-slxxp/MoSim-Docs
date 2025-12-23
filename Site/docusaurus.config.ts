@@ -72,6 +72,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/mosim-logo.png',
     colorMode: {
+      disableSwitch: true,
       respectPrefersColorScheme: true,
     },
     navbar: {
@@ -144,11 +145,10 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Cascade Studios. Built with Docusaurus.`,
     },
     prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      theme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
 };
