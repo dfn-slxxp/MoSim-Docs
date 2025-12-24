@@ -15,8 +15,12 @@ Export the assembly to GLTF, the normal naming scheme for models is `team name o
 If you have the ability to copy and or it is your teams CAD, it is highly recommended you swap to simplified swerve modules as they are a HUGE performance drain
 
 :::
- 
+
+![OnShape Export](@site/static/img/lynk/onshapeexport.png)
+
 Now we will open the model in blender by simply dragging it on to the blender window. Remember to delete the light, camera, and cube that are in the scene by default. I also highly recommend checking Merge Vertices, Onshape tends to generate duplicate vertices and this is a free optimization.
+
+![Blender Import](@site/static/img/lynk/blenderimport.png)
 
 :::note
 
@@ -25,6 +29,8 @@ This takes a while and will frequently report NOT RESPONDING, on windows, just g
 :::
 
 If your computer consistently crashes or fails to import to blender you can alternatively export to Collada, HOWEVER, it will be less performant and will make your editor experience worse and the end users experience worse.
+
+![Alternate OnShape Export](@site/static/img/lynk/colladaexport.png)
 
 When it finally imports it may not be upright which is okay, We will fix it in unity as it's simply easier.
 

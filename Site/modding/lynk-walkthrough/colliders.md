@@ -12,6 +12,8 @@ There is also a number of materials available. For most things NO Bounce or `noF
 
 Sometimes the box tube also doesn't behave, in these cases you have to make it a child compound collider as well.
 
+![Uncooperative Box Tube](@site/static/img/lynk/diagonalcollider.png)
+
 It is important to note that not everything has to have a collider, **or** a collider that follows its shape perfectly
 
 Once those are done, select 9496 and set the layer to robot, select change all children when doing so. 
@@ -23,3 +25,5 @@ Do this even if it's already robot layer
 :::
 
 Now we can finish up by going to the bottom and moving the wheels to match the real robots.
+
+![Move Wheels to Match](@site/static/img/lynk/bellypan.png)
