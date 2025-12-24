@@ -20,7 +20,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/modding/intro">
+            to="/modding/lynk-walkthrough/model-prep">
             Modding Walkthrough - 9496 Lynk
           </Link>
         </div>

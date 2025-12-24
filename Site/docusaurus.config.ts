@@ -151,6 +151,7 @@ const config: Config = {
     },
     prism: {
       theme: prismThemes.dracula,
+      additionalLanguages: ['csharp'],
     },
   } satisfies Preset.ThemeConfig,
 };
