@@ -6,8 +6,8 @@ type Sponsor = {
   url?: string;
 };
 
-const SPONSORS_URL = 'https://mosimulator.com/data/sponsors.json';
-const SPONSOR_IMAGE_BASE = 'https://mosimulator.com/sponsors';
+const SPONSORS_URL = '/sponsors.json';
+const SPONSOR_IMAGE_BASE = '/img/sponsors';
 
 const FooterSponsors = () => {
   const [sponsors, setSponsors] = useState<Sponsor[]>([]);

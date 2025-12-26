@@ -45,7 +45,9 @@ const SocialLinks = (): ReactElement => {
       </a>
 
       <a
-        href="/contact"
+        href="https://mosimulator.com/contact"
+        target="_blank"
+        rel="noopener noreferrer"
         className="footer__social-link footer__social-link--contact"
         aria-label="Contact us"
       >
