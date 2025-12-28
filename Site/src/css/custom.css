@@ -63,7 +63,7 @@
 }
 
 .navbar__title:hover {
-  color: var(--ifm-navbar-title-color);
+  color: var(--ifm-font-color-secondary);
   text-decoration: none;
 }
 

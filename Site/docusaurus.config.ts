@@ -85,9 +85,17 @@ const config: Config = {
           type: 'html',
           position: 'left',
           value: `
-            <a href="https://mosimulator.com" class="navbar__brand" style="display: flex; align-items: center; padding-right: 0.5rem;">
-              <img src="/img/mosim-logo.png" alt="MoSim Logo" class="navbar__logo" style="height: 32px; width: auto;"/>
-            </a>`,
+            <a
+              href="https://mosimulator.com"
+              class="navbar__brand mosim-logo-link"
+            >
+              <img
+                src="/img/mosim-logo.png"
+                alt="MoSim Logo"
+                class="navbar__logo"
+              />
+            </a>
+          `,
         },
         {
           type: 'html',
