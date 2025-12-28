@@ -40,6 +40,33 @@
   --ifm-navbar-link-hover-color: var(--ifm-font-color-secondary);
 }
 
+/* Remove navbar-item padding ONLY for the logo item */
+.navbar__item:has(.mosim-logo-link) {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Kill any remaining brand spacing */
+.mosim-logo-link {
+  padding: 0 !important;
+  margin-right: 0.25rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Hard cap logo size */
+.mosim-logo-link img {
+  width: 32px;
+  height: auto;
+  display: block;
+}
+
+/* Prevent flex growth */
+.navbar__brand {
+  flex: 0 0 auto !important;
+}
+
+
 .hero__subtitle {
   color: #cbd5e1; /* light gray */
 }
