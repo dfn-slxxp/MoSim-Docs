@@ -40,6 +40,10 @@
   --ifm-navbar-link-hover-color: var(--ifm-font-color-secondary);
 }
 
+.hero__subtitle {
+  color: #cbd5e1; /* light gray */
+}
+
 .theme-code-block-header {
   background-color: #0b0f1a !important;
   border: 1px solid rgba(255, 255, 255, 0.1);

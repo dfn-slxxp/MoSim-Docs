@@ -78,12 +78,19 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'MoSim Docs',
-      logo: {
-        alt: 'MoSim Logo',
-        src: 'img/mosim-logo.png',
-      },
+      title: undefined,
+      logo: undefined,
       items: [
+        {
+          type: 'html',
+          value: '<a href="https://mosimulator.com"><img src="/img/mosim-logo.png" alt="MoSim Logo" style="height: 32px; margin-right: 10px;"></a>',
+          position: 'left',
+        },
+        {
+          type: 'html',
+          value: '<span style="font-size: 18px; font-weight: bold;">MoSim Docs</span>',
+          position: 'left',
+        },
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
