@@ -61,6 +61,8 @@ If you learn something new while modding a robot, **you are encouraged to contri
 - Clone the public MoSim-Docs Repo
 - If you wish to test your changes first, follow [these docs](https://docusaurus.io/docs)
 - Edit the page(s) you wish to contribute to using distinct commits
+  - Be thorough but maintain legibility
+  - Include images and/or links to other documentation (within the site or unity/blender/etc)
 - Create a single pull request into the Review branch
 
 ## Stability & Expectations
