@@ -83,13 +83,19 @@ const config: Config = {
       items: [
         {
           type: 'html',
-          value: '<a href="https://mosimulator.com"><img src="/img/mosim-logo.png" alt="MoSim Logo" style="height: 32px; margin-right: 10px;"></a>',
           position: 'left',
+          value: `
+            <a href="https://mosimulator.com" class="navbar__brand" style="display: flex; align-items: center; padding-right: 0.5rem;">
+              <img src="/img/mosim-logo.png" alt="MoSim Logo" class="navbar__logo" style="height: 32px; width: auto;"/>
+            </a>`,
         },
         {
           type: 'html',
-          value: '<span style="font-size: 18px; font-weight: bold;">MoSim Docs</span>',
           position: 'left',
+          value: `
+            <a href="/" class="navbar__title" style="font-size: 18px; font-weight: 600;">
+              MoSim Docs
+            </a>`,
         },
         {
           type: 'docSidebar',
