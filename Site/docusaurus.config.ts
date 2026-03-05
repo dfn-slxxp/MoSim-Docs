@@ -48,7 +48,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: ({ versionDocsDirPath, docPath }) =>
-            `https://github.com/MoSimulator/MoSim-Docs/edit/main/${versionDocsDirPath}/${docPath}`,
+            `https://github.com/MoSimulator/MoSim-Docs/edit/main/Site/${versionDocsDirPath}/${docPath}`,
         },
         blog: false,
         theme: {
