@@ -47,8 +47,8 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/MoSimulator/MoSim-Docs',
+          editUrl: ({ versionDocsDirPath, docPath }) =>
+            `https://github.com/MoSimulator/MoSim-Docs/edit/main/Site/${versionDocsDirPath}/${docPath}`,
         },
         blog: false,
         theme: {
